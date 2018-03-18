@@ -1,0 +1,124 @@
+
+
+/* ---- RESET ---- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  height: 0;
+}
+
+/* ---- TYPOGRAPHY ---- */
+
+body {
+  background-color: lightgrey;;
+  color: #111;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+/* ---- LAYOUT ---- */
+#container {
+  margin: 5% 35%;
+  width: 25%;
+  max-height: 600px;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 5px 5px 20px grey;
+}
+
+/* ---- COMPONENTS ---- */
+
+/* --- search bar --- */
+
+#search-bar{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+#search-bar input{
+  width: 100%;
+  padding: 8px;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  margin-right: 10px;
+  outline: none;
+}
+#search-bar button{
+  padding: 8px;
+  font-weight: bolder;
+  border: 1px solid lightgrey;
+  border-radius: 2px;
+  outline: none;
+}
+
+/* --- user info --- */
+
+#user-info{
+  display: none;
+}
+.info-display{
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column;
+  margin-left: 10px;
+}
+#user-image{
+  width: 80px;
+  border-radius: 2px;
+}
+#user-login,
+#user-bio{
+  font-size: 14px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+#user-full-name{
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+/* --- repos info --- */
+#repos-list{
+  display: none;
+}
+#repos-list ul{
+  margin-top: 0;
+  padding: 0px;
+  list-style: none;
+}
+#repos-list ul>li{
+  display: flex;
+  justify-content: space-between;
+  max-height: 600px;
+  border-bottom: 1px solid lightgrey;
+  padding: 15px;
+}
+#repos-list ul>li>:first-child{
+  font-size: 16px;
+  font-weight: bolder;
+}
+#repos-list ul>li>:nth-child(2){
+  max-width: 20%;
+  text-align: center;
+}
+#repos-list h2{
+  border-bottom: 2px solid black;
+  margin-bottom: 0;
+  padding: 10px;
+  font-size: 18px;
+}
+#user-repos img{
+  width: 20%;
+}
+
+/* --- error message --- */
+#error-message{
+  display: none;
+}

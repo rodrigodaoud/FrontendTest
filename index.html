@@ -5,10 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Marfeel Front-End Test</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed|Oswald" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
     <script src="./javascript/main.js"></script>
 </head>
 <body>
-    
+    <div id="container">
+        <div id="search-bar">
+            <input type="text" id="search" placeholder="Search username...">
+            <button id="search-btn">Search</button>
+        </div>
+
+        <div id="user-info">
+            <div>
+                <img src="" id="user-image">
+            </div>
+            <div class="info-display">
+                <span id="user-login"></span>
+                <span id="user-full-name"></span>
+                <span id="user-bio"></span>
+            </div>
+        </div>
+
+        <div id="repos-list">
+            <h2>Repositories</h2>
+            <div class="repos-display">
+                <ul id="user-repos"></ul>
+            </div>
+        </div>
+
+        <div id="error-message">
+            <span id="error"></span>
+        </div>
+    </div>
+
 </body>
 </html>
