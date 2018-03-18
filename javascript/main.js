@@ -84,6 +84,8 @@ function main (){
         })
         .catch((err) => {
             if(err.toString().includes("Not Found")){
+                userInfoElement.style = "display: none";
+                repoElement.style = "display: none";
                 const errorElement = document.getElementById('error-message');
                 errorElement.style = "display: block";
                 const errorMessageElement = document.getElementById('error');
