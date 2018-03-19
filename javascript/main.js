@@ -16,6 +16,10 @@ function main (){
     const repoElement = document.getElementById('repos-list');
     const repoListElement = document.getElementById('user-repos');
 
+    // --- Error Message --- //
+    const errorElement = document.getElementById('error-message');
+    const errorMessageElement = document.getElementById('error');
+
     function getUserData(url){
         return fetch(url)
         .then((resp) => {
@@ -86,9 +90,7 @@ function main (){
             if(err.toString().includes("Not Found")){
                 userInfoElement.style = "display: none";
                 repoElement.style = "display: none";
-                const errorElement = document.getElementById('error-message');
                 errorElement.style = "display: block";
-                const errorMessageElement = document.getElementById('error');
                 errorMessageElement.innerText = "Does not exist";
             }
         });
@@ -97,7 +99,6 @@ function main (){
             displayReposData(data);
         })
         .catch((err) => {});
-        
     }
 
 

@@ -122,3 +122,10 @@ body {
 #error-message{
   display: none;
 }
+#error-message{
+  color: white;
+  background-color: rgb(255, 0, 0, 0.5);
+  text-align: center;
+  padding: 15px;
+  border-radius: 5px;
+}
